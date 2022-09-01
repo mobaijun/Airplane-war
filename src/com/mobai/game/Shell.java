@@ -24,7 +24,7 @@ public class Shell extends GameObject {
 
         g.fillOval((int) x, (int) y, width, height);
 
-        //炮弹沿着任意角度去飞
+        // 炮弹沿着任意角度去飞
         x += speed * Math.cos(degree);
         y += speed * Math.sin(degree);
 

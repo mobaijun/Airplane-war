@@ -20,7 +20,7 @@ public class Plane extends GameObject {
                 x += speed;
             }
             if (up) {
-                y -= speed;    //y = y-speed;
+                y -= speed;
             }
             if (down) {
                 y += speed;
@@ -38,7 +38,11 @@ public class Plane extends GameObject {
         this.height = img.getHeight(null);
     }
 
-    //按下某个键，增加相应的方向
+    /**
+     * 按下某个键，增加相应的方向
+     *
+     * @param e
+     */
     public void addDirection(KeyEvent e) {
         switch (e.getKeyCode()) {
             case KeyEvent.VK_LEFT:
@@ -56,7 +60,9 @@ public class Plane extends GameObject {
         }
     }
 
-    //按下某个键，取消相应的方向
+    /**
+     * 按下某个键，取消相应的方向
+     */
     public void minusDirection(KeyEvent e) {
         switch (e.getKeyCode()) {
             case KeyEvent.VK_LEFT:

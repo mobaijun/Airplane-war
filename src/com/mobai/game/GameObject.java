@@ -6,6 +6,8 @@ import java.awt.Rectangle;
 
 /**
  * 游戏物体的父类
+ *
+ * @author mobai
  */
 public class GameObject {
     Image img;
@@ -39,8 +41,6 @@ public class GameObject {
 
     /**
      * 返回物体所在的矩形。便于后续的碰撞检测
-     *
-     * @return
      */
     public Rectangle getRect() {
         return new Rectangle((int) x, (int) y, width, height);
